@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Générateur de Mots de Passe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Générateur de Mots de Passe</h1>
+      <div class="password-generator">
+        <label for="passwordLength">Longueur du Mot de Passe :</label>
+        <input type="number" id="passwordLength" min="4" max="20" value="12" />
+        <br />
+        <input type="checkbox" id="includeUppercase" />
+        <label for="includeUppercase">Inclure les Lettres Majuscules</label>
+        <br />
+        <input type="checkbox" id="includeNumbers" />
+        <label for="includeNumbers">Inclure les Chiffres</label>
+        <br />
+        <input type="checkbox" id="includeSpecialChars" />
+        <label for="includeSpecialChars">Inclure les Caractères Spéciaux</label>
+        <br />
+        <button class="button" id="generatePasswordButton">
+          Générer le mot de passe
+        </button>
+        <p class="password" id="generatedPassword"></p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="footer-text">&copy; Ndiaye Xassida, Software Developer</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
